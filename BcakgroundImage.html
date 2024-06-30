@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Background Changer</title>
+<style>
+    body {
+      /* Center and cover the background image */
+      background-size: cover;
+      background-position: center;
+      /* Ensure the background image covers the entire body */
+      height: 150vh;
+      width: 100vh;
+      margin: 0;
+      
+    }
+  </style>
+
+</head>
+<body>
+
+  <button id ="red">Image 1</button>
+  <button id ="blue">Image 2</button>
+  <button id ="image">Image 3</button>
+  <button onclick = "Back()">Back</button>
+  <script>
+    let body = document.querySelector('body');
+    document.querySelector('#red').addEventListener('click', function(){body.style.backgroundImage = 'url("Askey.JPEG")';});
+    document.querySelector('#blue').addEventListener('click', function(){body.style.backgroundImage = 'url("Askey2.png")';});
+    document.querySelector('#image').addEventListener('click', function(){body.style.backgroundImage = 'url("Askey3.png")';});
+  </script>
+
+<script>
+  function Back()
+  {
+      window.location.href = "HomePage.html";
+  }
+</script>
+</body>
+</html>
