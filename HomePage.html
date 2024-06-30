@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Askey Fan Club</title>
+<style>
+    .welcome, .welcome_container{
+        height: 350px;
+        margin: 0 !important;
+    }
+
+    .welcome_container{
+        position: relative; /* Change to relative positioning */
+        background: #0000FF;
+        background-image: url("Banner.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        align-items: center; /* Center vertically */
+        justify-content: center; /* Center horizontally */
+        text-align: center; /* Center text */
+        color: floralwhite;
+    }
+
+    .welcome_message {
+        max-width: 1070px;
+        margin: 0 auto;
+        padding: 1rem 0 0 0;
+    }
+    .welcome_message h1{
+        line-height: 6;
+        font-weight: bold;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+    body{
+        background-color: rgb(92, 210, 92);
+        margin: 0; /* Remove default margin */
+    }
+
+    #content {
+        padding: 20px; /* Added padding for content area */
+        text-align: center; /* Center-align content */
+    }
+
+    #content_body {
+        max-width: 800px;
+        margin: 0 auto; /* Center content_body horizontally */
+        background-color: #fff;
+        padding: 20px;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    }
+
+    #content_body p {
+        margin-bottom: 1rem;
+        font-size: 18px;
+        line-height: 1.6;
+        color: #333;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+
+</style>
+
+
+</head>
+<body>
+    <div class="welcome_container"> 
+        <div class="welcome_message">
+            <h1>Welcome to the Askey Fan Club</h1>
+        </div>
+    </div>
+
+    <div id="content">
+        <div id="content_body">
+            <h2>Menu</h2>
+            <button onclick="BackgroundImage()">Askey Wall Paper</button>
+            <button onclick="Version1()">Check out version 1!</button>
+            <button onclick="PlaceHold()">???</button>
+        </div>
+    </div>
+
+    <div>
+        <p style = "text-align: center;">
+            "After a long fought battle ... I Askey'd all over the place" - Probably Askey
+        </p>
+    </div>
+
+    <script>
+        function BackgroundImage()
+            {
+                window.location.href = "BcakgroundImage.html";
+            }
+        function Version1()
+        {
+            window.location.href = "Askey.html";
+        }
+        function PlaceHold()
+        {
+            window.location.href = "Funny.html";
+        }
+        
+    </script>
+
+</body>
+</html>
